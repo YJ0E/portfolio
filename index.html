@@ -1,99 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chew Yong Jian – Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Chew Yong Jian</h1>
-    <p>3D Modeler • Game Development Student</p>
+<canvas id="particles"></canvas>
+
+<header class="site-header">
+  <div class="header-inner">
+    <img src="images/pfp.png" class="pfp" alt="profile picture">
+    <div class="title">
+      <h1>Chew Yong Jian</h1>
+      <p class="tagline">3D Modeler • Game Development Student</p>
+    </div>
+  </div>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<nav class="site-nav">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I’m a highly motivated Game Development student and passionate 3D modeler specializing in detailed character and environment creation. I continuously refine skills in sculpting, modeling, PBR texturing and exploring animation. Seeking opportunities to expand technical knowledge and contribute to creative projects.</p>
+<main>
 
-    <div class="education">
-        <h3>Education</h3>
-        <ul>
-            <li>Degree in Computer Game Development (2024 – present)</li>
-            <li>Diploma in ICT (Software Engineering), APU (2022 – 2023)</li>
-        </ul>
+<section id="about" class="panel">
+  <div class="container">
+    <h2>About</h2>
+    <p>I’m a highly motivated Game Development student and passionate 3D modeler specializing in detailed character and environment creation. I refine skills in sculpting, modeling, PBR texturing and animation workflows.</p>
+
+    <div class="edu">
+      <h3>Education</h3>
+      <ul>
+        <li>Degree in Computer Game Development (2024 – present)</li>
+        <li>Diploma in ICT (Software Engineering), APU (2022 – 2023)</li>
+      </ul>
     </div>
+  </div>
 </section>
 
-<section id="skills" class="section">
+<section id="skills" class="panel">
+  <div class="container">
     <h2>Skills</h2>
 
-    <div class="skill-grid">
-        <div class="skill-card">
-            <span class="material-icons">brush</span>
-            <h3>3D Character Modeling</h3>
-            <p>1 year experience • Blender, ZBrush, Substance Painter</p>
-        </div>
+    <div class="grid">
+      <div class="card">
+        <span class="material-icons">brush</span>
+        <h4>3D Character Modeling</h4>
+        <p>Blender, ZBrush, Substance Painter</p>
+      </div>
 
-        <div class="skill-card">
-            <span class="material-icons">category</span>
-            <h3>3D Prop Modeling</h3>
-            <p>1 year experience • 3DsMax, Blender, Substance Painter</p>
-        </div>
+      <div class="card">
+        <span class="material-icons">category</span>
+        <h4>3D Prop Modeling</h4>
+        <p>3DsMax, Blender, Substance Painter</p>
+      </div>
 
-        <div class="skill-card">
-            <span class="material-icons">videogame_asset</span>
-            <h3>Game Engine Integration</h3>
-            <p>2 years experience • Unity</p>
-        </div>
+      <div class="card">
+        <span class="material-icons">videogame_asset</span>
+        <h4>Game Engine</h4>
+        <p>Unity Integration & Scripting</p>
+      </div>
 
-        <div class="skill-card">
-            <span class="material-icons">translate</span>
-            <h3>Languages</h3>
-            <p>English (Fluent) • Chinese (Native) • Malay (Fluent)</p>
-        </div>
+      <div class="card">
+        <span class="material-icons">translate</span>
+        <h4>Languages</h4>
+        <p>English • Chinese • Malay</p>
+      </div>
     </div>
+
+  </div>
 </section>
 
-<section id="projects" class="section">
+
+<section id="projects" class="panel">
+  <div class="container">
     <h2>Projects</h2>
 
-    <div class="project-card">
-        <img src="images/game.jpg" alt="Sample Game Project">
-        <div class="project-info">
-            <h3>Game & Character Art Showcase</h3>
-            <p>Creating game-ready assets, PBR setups, character and prop modeling. Includes rigged characters, stylized assets, and small gameplay prototypes such as simple roguelike generation and enemy AI scripts.</p>
-        </div>
+    <div class="project">
+      <img src="images/game.jpg" alt="game showcase">
+      <div class="proj-info">
+        <h3>Game & Art Showcase</h3>
+        <p>Game-ready assets, PBR materials, character sculpting and rigging. Includes simple AI programming & procedural level mechanics.</p>
+      </div>
     </div>
+
+    <div class="game-embed">
+      <h3>Blinded Escape</h3>
+      <p>A collaborative game project published on itch.io</p>
+
+      <iframe frameborder="0" 
+        src="https://itch.io/embed/4102291" 
+        width="552" height="167" 
+        class="itch-embed">
+        <a href="https://steadycarrot.itch.io/blinded-escape">Blinded Escape by steadycarrot, Yong Jian</a>
+      </iframe>
+    </div>
+
+  </div>
 </section>
 
-<section id="contact" class="section">
+
+<section id="contact" class="panel">
+  <div class="container">
     <h2>Contact</h2>
-    <div class="contact-list">
-        <p><span class="material-icons">call</span> 012-653 7341</p>
-        <p><span class="material-icons">email</span> cjoe0505@gmail.com</p>
-        <p><span class="material-icons">person</span> Chew Yong Jian</p>
-        <p><span class="material-icons">public</span> <a href="https://www.linkedin.com/in/chew-yong-jian-036068284/" target="_blank">LinkedIn</a></p>
-        <p><span class="material-icons">photo_camera</span> <a href="https://sketchfab.com/yjoe05" target="_blank">Sketchfab</a></p>
+
+    <div class="contacts">
+      <p><span class="material-icons">call</span>012-653 7341</p>
+      <p><span class="material-icons">email</span>cjoe0505@gmail.com</p>
+      <p><span class="material-icons">public</span>
+        <a href="https://www.linkedin.com/in/chew-yong-jian-036068284/" target="_blank">LinkedIn</a></p>
+      <p><span class="material-icons">photo_camera</span>
+        <a href="https://sketchfab.com/yjoe05" target="_blank">Sketchfab</a></p>
     </div>
+
+  </div>
 </section>
 
-<footer>
-    <p>© 2025 Chew Yong Jian</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2025 Chew Yong Jian</div>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
