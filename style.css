@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    color: #111;
+    background: #f7f7f7;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+nav {
+    background: #111;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    opacity: 0.6;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skill-card .material-icons {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.contact-list p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-list a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    color: #fff;
+    font-weight: 300;
+}
