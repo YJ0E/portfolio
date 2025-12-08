@@ -226,3 +226,39 @@ body{
   .project img{width:50%}
   .proj-info{width:50%;display:flex;flex-direction:column;justify-content:center}
 }
+
+.model-embed {
+  margin-top: 20px;
+  padding: 20px;
+  background: #14121c;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  animation: slideIn .7s ease both;
+}
+
+.model-embed h3 {
+  margin: 0 0 8px;
+  color: var(--primary);
+}
+
+.model-embed p {
+  margin: 0 0 14px;
+  color: var(--text);
+}
+
+.sketchfab-embed-wrapper iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.sketchfab-credit {
+  font-size: 12px;
+  margin-top: 8px;
+  color: #a4a4a4;
+}
+
+.sketchfab-credit a {
+  color: var(--primary);
+  text-decoration: none;
+}
